@@ -1,0 +1,52 @@
+{
+  "name": "galaxy-business-web",
+  "description": "A Vue.js project",
+  "version": "1.0.14",
+  "author": "xiaowukong <icy0612@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "xwk": "cross-env NODE_ENV=development webpack-dev-server --open --hot --host 10.17.85.98",
+    "lw": "cross-env NODE_ENV=development webpack-dev-server --open --hot --host 10.17.85.175",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "docker-test": "npm install && cross-env NODE_ENV=test webpack --progress --hide-modules && node script/docker.js",
+    "docker": "npm install && cross-env NODE_ENV=production webpack --progress --hide-modules && cross-env NODE_ENV=production node script/docker.js"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.8",
+    "execa": "^1.0.0",
+    "highcharts": "^7.0.1",
+    "highcharts-vue": "^1.2.0",
+    "listr": "^0.14.3",
+    "vue": "^2.5.11",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^2.8.1",
+    "vue2vis": "0.0.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.7",
+    "element-theme": "^2.0.1",
+    "element-theme-chalk": "^2.4.8",
+    "file-loader": "^1.1.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
